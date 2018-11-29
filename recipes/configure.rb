@@ -9,6 +9,11 @@ package "Install PHP" do
 end
 
 service "Start Apache" do
+  action :enable
+  service_name "httpd"  
+end
+
+service "Start Apache" do
   action :start
   service_name "httpd"  
 end
