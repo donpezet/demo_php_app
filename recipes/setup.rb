@@ -6,12 +6,11 @@ user "Add user for Don Pezet" do
   username "dpezet"
 end
 
-cookbook_file "Install website files" do
+directory "Create log directory" do
   group "root"
   mode "0755"
-  owner "root"
-  path "/var/www/html/index.php"
-  source "index.php"
+  owner "ec2-user"
+  path "/var/log/customapp"
 end
 
 service "Start Apache" do

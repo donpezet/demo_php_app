@@ -13,9 +13,10 @@ service "Start Apache" do
   service_name "httpd"  
 end
 
-directory "Create log directory" do
+cookbook_file "Install website files" do
   group "root"
   mode "0755"
-  owner "ec2-user"
-  path "/var/log/customapp"
+  owner "root"
+  path "/var/www/html/index.php"
+  source "index.php"
 end
