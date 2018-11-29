@@ -12,8 +12,3 @@ directory "Create log directory" do
   owner "ec2-user"
   path "/var/log/customapp"
 end
-
-service "Start Apache" do
-  action :start
-  service_name "httpd"  
-end
