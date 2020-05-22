@@ -16,6 +16,8 @@ echo "<HTML>
 <H2><B>Availability Zone:</B><FONT COLOR=\"blue\"> $azone</FONT></H2>
 <BR><HR><BR>
 <P>This server is currently online and the Apache process is serving up web pages.</P>
+<br>
+<img src="logo.png">
 </CENTER>
 </BODY>
 </HTML>";
